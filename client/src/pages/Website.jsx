@@ -15,7 +15,7 @@ const Website = () => {
       <div className="white-gradient" />
       <Hero />
     </div>
-    <Companies />
+    {/* <Companies /> */}
     <Residencies/>
     <Value/>
     <Contact/>
