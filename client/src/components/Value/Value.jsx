@@ -21,14 +21,9 @@ const Value = () => {
     <section id="value" className="v-wrapper">
       <div className="paddings innerWidth flexCenter v-container">
         {/* left side */}
-        <div className="v-left">
-          <div className="image-container">
-            <img src="./r5.jpg" alt="" width={650} height={700} />
-          </div>
-        </div>
 
         {/* right */}
-        <div className="flexColStart v-right">
+        <div className="flexColStart v-left paddings">
           <span className="orangeText">Our Value</span>
 
           <span className="primaryText">Value We Give to You</span>
@@ -47,10 +42,14 @@ const Value = () => {
             {data.map((item, i) => {
               const [className, setClassName] = useState(null);
               return (
-                <AccordionItem className={`accordionItem ${className}`} uuid={i} key={i}>
+                <AccordionItem
+                  className={`accordionItem ${className}`}
+                  uuid={i}
+                  key={i}
+                >
                   <AccordionItemHeading>
                     <AccordionItemButton className="flexCenter accordionButton ">
-                        {/* just for getting state of item */}
+                      {/* just for getting state of item */}
                       <AccordionItemState>
                         {({ expanded }) =>
                           expanded
@@ -59,11 +58,7 @@ const Value = () => {
                         }
                       </AccordionItemState>
                       <div className="flexCenter icon">{item.icon}</div>
-                      <span
-                        className="primaryText"
-                      >
-                        {item.heading}
-                      </span>
+                      <span className="primaryText">{item.heading}</span>
                       <div className="flexCenter icon">
                         <MdOutlineArrowDropDown size={20} />
                       </div>
@@ -76,6 +71,11 @@ const Value = () => {
               );
             })}
           </Accordion>
+        </div>
+        <div className="flexEnd v-right">
+          <div className="image-container">
+            <img src="./r5.jpg" alt="" width={650} height={700} />
+          </div>
         </div>
       </div>
     </section>
