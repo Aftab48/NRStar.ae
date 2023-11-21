@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      domain="dev-nrstar.uk.auth0.com"
      clientId="JiZK6rfKVzfxGSUXkhrJDydU5kNVepmW"
      authorizationParams={{
-      redirect_uri: "http://localhost:5173"
+      redirect_uri: "https://nr-star-ae.vercel.app"
      }}
      audience="http://localhost:8000"
      scope="openid profile email"
