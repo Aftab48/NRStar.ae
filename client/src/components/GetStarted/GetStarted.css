@@ -1,0 +1,26 @@
+.g-wrapper{
+    background-color: #151515;
+}
+
+.inner-container{
+    gap: 1.5rem;
+    background: #000 ;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 8px solid rgba(128, 128, 128, 0.143);
+    text-align: center;
+}
+
+.inner-container .primaryText{
+    font-weight: 600;
+}
+.inner-container .secondaryText{
+    color: white;
+}
+.inner-container .button {
+    background: #151515;
+    border: 2px solid #fbc403;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    color: #fbc403;
+}

@@ -1,0 +1,61 @@
+.ab-wrapper{
+    background-color: #000;
+}
+
+.ab-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.ab-head{
+    margin-bottom: 2rem;
+}
+
+.ab-card{
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 10px solid rgba(128, 128, 128, 0.143);
+    width: 30rem;
+    max-width: max-content;
+    height: 30rem;
+    margin: auto;
+    transition: all 0.3s ease-in;
+}
+
+.ab-card>img{
+    width: 100%;
+    max-width: 15rem;
+    height: 80%;
+}
+
+.ab-card>:nth-child(2)
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ab-card>:nth-child(3)
+{
+    font-size: 1.5rem;
+}
+
+.ab-card>:nth-child(4)
+{
+    font-size: 0.7rem;
+    width: 15rem;
+}
+
+.ab-card:hover{
+    scale: 1.025;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(136, 160, 255, 0.46) 2.17.91%
+    );
+}
+
+.swiper-horizontal{
+    overflow: visible;
+}
+
